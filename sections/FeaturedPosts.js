@@ -53,6 +53,20 @@ const FeaturedPosts = () => {
 
     return (
         <div className="mb-8">
+            <div className="flex text-center rounded-lg mb-8 bg-yellow-300 bg-opacity-50">
+                <div className="px-4 py-8 banner-text h-10">
+                    <div className="py-2">
+                        <h1 className="text-white text-4xl">Authentic Thai Food</h1>
+                    </div>
+                    <div className="py-2">
+                        <h3 className="text-white italic text-xl">Discover New Flavours Around Thailand!</h3>
+                    </div>
+                </div>
+                <div className='banner w-full flex h-10'>
+                    
+                </div>
+            </div>
+
             <Carousel infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="px-4">
                 {dataLoaded && featuredPosts.map((post, index) => (
                     <FeaturedPostCard key={index} post={post} />
