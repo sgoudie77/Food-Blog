@@ -66,12 +66,15 @@ const FeaturedPosts = () => {
                     
                 </div>
             </div>
-            <div className="text-center">
-                <h3 className="text-white text-md pb-4 tracking-wide">
-                    <span className='font-medium text-xl'>-</span> 
-                        Featured Posts 
-                    <span className='font-medium text-xl'>-</span>
-                </h3>
+            
+            <div className='w-full h-auto pb-4 flex justify-center'>
+                <div className="w-auto h-auto bg-yellow-300 bg-opacity-50 rounded-md px-4 py-0">
+                    <h3 className=" text-white text-md tracking-wide">
+                        <span className='font-medium text-xl'>-</span> 
+                            {' '}Featured Posts{' '} 
+                        <span className='font-medium text-xl'>-</span>
+                    </h3>
+                </div>
             </div>
 
             <Carousel infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="px-4">
