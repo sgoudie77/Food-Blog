@@ -54,20 +54,24 @@ const FeaturedPosts = () => {
     return (
         <div className="mb-8">
             <div className="flex text-center rounded-lg mb-8 bg-yellow-300 bg-opacity-50">
-                <div className="banner-text py-4">
-                    <div className="py-4">
+                <div className="banner-text w-full h-auto p-12">
+                    <div>
                         <h1 className="text-white text-4xl">Authentic Thai Food</h1>
                     </div>
-                    <div className="py-4">
+                    <div>
                         <h3 className="text-white text-md">Discover Flavours Around Thailand!</h3>
                     </div>
                 </div>
-                <div className='banner w-full flex'>
+                <div className='banner w-full h-auto block p-4'>
                     
                 </div>
             </div>
             <div className="text-center">
-                <h3 className="text-white text-md pb-4 tracking-wide"><span className='font-medium text-xl'>-</span> Featured Posts <span className='font-medium text-xl'>-</span></h3>
+                <h3 className="text-white text-md pb-4 tracking-wide">
+                    <span className='font-medium text-xl'>-</span> 
+                        Featured Posts 
+                    <span className='font-medium text-xl'>-</span>
+                </h3>
             </div>
 
             <Carousel infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass="px-4">
