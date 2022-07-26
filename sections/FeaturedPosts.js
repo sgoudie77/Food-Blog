@@ -5,6 +5,9 @@ import 'react-multi-carousel/lib/styles.css';
 import { FeaturedPostCard } from '../components';
 import { getFeaturedPosts } from '../services';
 
+import { MdArrowLeft, MdArrowRight } from 'react-icons/md';
+import { GiLotus } from 'react-icons/gi';
+
 const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
@@ -53,8 +56,8 @@ const FeaturedPosts = () => {
 
     return (
         <div className="mb-8">
-            <div className="flex text-center rounded-lg mb-8 bg-yellow-300 bg-opacity-50">
-                <div className="banner-text w-full h-auto p-12">
+            <div className="flex text-center rounded-md mb-8 bg-yellow-300 bg-opacity-50">
+                <div className="banner-text w-full h-auto p-12 z-50">
                     <div>
                         <h1 className="text-white text-4xl">Authentic Thai Food</h1>
                     </div>
@@ -68,12 +71,16 @@ const FeaturedPosts = () => {
             </div>
             
             <div className='w-full h-auto pb-4 flex justify-center'>
-                <div className="w-auto h-auto bg-yellow-300 bg-opacity-50 rounded-md px-4 py-0">
-                    <h3 className=" text-white text-md tracking-wide">
-                        <span className='font-medium text-xl'>-</span> 
-                            {' '}Featured Posts{' '} 
-                        <span className='font-medium text-xl'>-</span>
+                <div className="w-auto h-auto flex bg-yellow-300 bg-opacity-50 rounded-md py-0">
+                    <div className='featured-arrow'>
+                        <MdArrowLeft className='text-white font-semibold text-2xl' />
+                    </div>
+                    <h3 className="featured-arrow-text text-white text-md tracking-wide">    
+                        Featured Posts 
                     </h3>
+                    <div className='featured-arrow'>
+                        <MdArrowRight  className='text-white font-semibold text-2xl' />
+                    </div>
                 </div>
             </div>
 
