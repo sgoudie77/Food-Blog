@@ -6,7 +6,7 @@ import { FeaturedPostCard } from '../components';
 import { getFeaturedPosts } from '../services';
 
 import { MdArrowLeft, MdArrowRight } from 'react-icons/md';
-import { GiLotus } from 'react-icons/gi';
+// import { GiLotus } from 'react-icons/gi';
 
 const responsive = {
     superLargeDesktop: {
